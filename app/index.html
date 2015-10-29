@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>myAngularApp</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="author" content="Apps4Pro">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+
+    <link rel="shortcut icon" type="image/png" href="resources/icons/favicon-16x16.ico">
+    <link rel="stylesheet" href="bower_components/angular-chart.js/dist/angular-chart.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+
+    <script language="javascript">
+      function blockMove(e) {
+        'use strict';
+        //if (e.preventDefault) e.preventDefault();
+        if (e) e.defaultPreventDefault();
+      }
+    </script>
+
+    <!-- App JS -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-gettext/dist/angular-gettext.js"></script>
+    <script src="bower_components/pouchdb/dist/pouchdb.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/Chart.js/Chart.js"></script>
+    <script src="bower_components/angular-chart.js/dist/angular-chart.js"></script>
+    <!--
+    <script src="bower_components/angulartics/dist/angulartics.min.js"></script>
+    <script src="bower_components/angulartics/dist/angulartics-ga.min.js"></script>
+-->
+
+    <script src="javascripts/app.js"></script>
+    <script src="javascripts/config/config.js"></script>
+    <script src="javascripts/directives/directives.js"></script>
+    <script src="javascripts/directives/navigation.js"></script>
+    <script src="javascripts/filters/filters.js"></script>
+    <script src="javascripts/languages/translation.js"></script>
+    <script src="javascripts/services/services.js"></script>
+    <script src="javascripts/services/srvAnalytics.js"></script>
+    <script src="javascripts/services/srvConfig.js"></script>
+    <script src="javascripts/services/srvCordova.js"></script>
+    <script src="javascripts/services/data/srvData.pouchdb.js"></script>
+    <script src="javascripts/services/a4p/a4p.js"></script>
+    <script src="javascripts/services/a4p/a4p.all.js"></script>
+    <script src="javascripts/services/a4p/a4p.json.js"></script>
+    <script src="javascripts/services/a4p/a4p.log.js"></script>
+    <script src="javascripts/services/a4p/a4p.xml.js"></script>
+    <script src="javascripts/services/a4p/a4p.storage.js"></script>
+
+    <script src="views/views.js"></script>
+    <script src="views/ctrlNavigation.js"></script>
+    <script src="views/chore/chore.js"></script>
+    <script src="views/dashboard/dashboard.js"></script>
+    <script src="views/login/login.js"></script>
+    <script src="views/user/user.js"></script>
+
+    <!-- PGB Cordova -->
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="GAPlugin.js"></script>
+
+    <!-- JS NGTemplate -->
+    <script src="javascripts/templates/_templatesEmpty.js"></script>
+
+    <!--
+    <script type="text/javascript" charset="utf-8" src="analytics.js"></script>
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','analytics.js','ga');
+
+      //  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      // ga('create', 'UA-10255892-9', { 'cookieDomain': 'none' });
+    </script>
+    -->
+</head>
+<body onscroll="blockMove()" ontouchmove="blockMove(e)" ng-app="myAngularApp"
+      style="overflow-x: hidden;">
+
+  <div ng-include="'views/views.html'"></div>
+
+</body>
+</html>

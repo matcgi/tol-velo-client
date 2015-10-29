@@ -1,0 +1,15 @@
+
+build/
+node_modules/
+
+.DS_Store
+
+npm-debug.log*
+log
+
+## Translations
+## *.mo
+
+## Mr Developer
+## .mr.developer.cfg
+## /.idea

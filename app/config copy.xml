@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0"
+    xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android"
+    id = 'com.apps4pro.betatodoc'
+    version = '1'>
+
+    <name>todoc</name>
+    <description>todoc latest</description>
+
+    <author email="contact@apps4pro.com" href="https://apps4pro.com">Apps4pro Team</author>
+
+    <preference name='phonegap-version' value='cli-5.1.1' />
+    <preference name="loglevel" value="VERBOSE" />
+
+
+    <!--    officials
+            http://docs.build.phonegap.com/en_US/3.3.0/configuring_preferences.md.html#Preferences
+    -->
+    <preference name="fullscreen" value="false" />
+    <preference name="orientation" value="default" />
+    <preference name="exit-on-suspend" value="true" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="detect-data-types" value="false" />
+    <preference name="android-minSdkVersion" value="15" />
+    <preference name="android-installLocation" value="internalOnly" />
+    <preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
+
+
+    <!--    unofficials - test ?
+    http://docs.phonegap.com/en/edge/guide_platforms_ios_config.md.html#iOS%20Configuration)
+    http://docs.phonegap.com/en/edge/guide_platforms_android_config.md.html#Android%20Configuration
+  -->
+    <preference name="webviewbounce" value="false" /> <!-- ?? -->
+    <preference name="DisallowOverscroll" value="true" /> <!-- ?? -->
+    <preference name="stay-in-webview" value="true" /> <!-- ?? -->
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="EnableViewportScale" value="true" /> <!-- ?? -->
+    <preference name="MediaPlaybackRequiresUserAction" value="false" />
+    <preference name="AllowInlineMediaPlayback" value="false" />
+    <preference name="BackupWebStorage" value="cloud" />
+    <preference name="TopActivityIndicator" value="gray" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="true" /> <!-- ?? -->
+    <preference name="HideKeyboardFormAccessoryBar" value="true" /> <!-- ?? -->
+    <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="SplashScreenDelay" value="5000" />
+    <preference name="ErrorUrl" value=""/>
+    <preference name="BackgroundColor" value=""/>
+    <preference name="KeepRunning" value="false"/>
+    <preference name="LoadingDialog" value=","/>
+    <preference name="LoadUrlTimeoutValue" value="50000" />
+    <preference name="disable-cursor" value="false" /> <!-- ?? -->
+    <preference name="KeyBoardShrinksView" value="false" /> <!-- ?? -->
+
+
+    <!--<gap:plugin name="org.apache.cordova.console" />
+    <gap:plugin name="org.apache.cordova.inappbrowser" />
+    <gap:plugin name="org.apache.cordova.splashscreen" />
+    <gap:plugin name="org.apache.cordova.globalization" />
+    <gap:plugin name="org.apache.cordova.contacts" />
+    <gap:plugin name="org.apache.cordova.vibration" />
+    <gap:plugin name="org.apache.cordova.dialogs" />
+    <gap:plugin name="org.apache.cordova.file-transfer" />
+    <gap:plugin name="org.apache.cordova.file" />
+    <gap:plugin name="org.apache.cordova.media-capture" />
+    <gap:plugin name="org.apache.cordova.media" />
+    <gap:plugin name="org.apache.cordova.camera" />
+    <gap:plugin name="org.apache.cordova.geolocation" />
+    <gap:plugin name="org.apache.cordova.device-orientation" />
+    <gap:plugin name="org.apache.cordova.device-motion" />
+    <gap:plugin name="org.apache.cordova.battery-status" />
+    <gap:plugin name="org.apache.cordova.network-information" />-->
+    <gap:plugin name="org.apache.cordova.device" />
+
+    <gap:plugin name="com.adobe.plugins.gaplugin" />
+    <gap:plugin name="com.phonegap.plugin.statusbar" />
+
+    <!-- iOS Status Bar
+    <gap:plugin name="org.apache.cordova.statusbar" />
+
+    <feature name="StatusBar">
+      <param name="ios-package" value="CDVStatusBar" onload="true" />
+    </feature>
+    <preference name="StatusBarOverlaysWebView" value="false"/>
+    <preference name="StatusBarBackgroundColor" value="#000000"/>
+    <preference name="StatusBarStyle" value="lightcontent" />
+
+    <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true">
+      <boolean>false</boolean>
+    </gap:config-file>
+    <gap:config-file platform="ios" parent="UIStatusBarHidden" overwrite="true">
+      <boolean>true</boolean>
+    </gap:config-file>
+    -->
+
+    <!-- Enable document import
+    <gap:config-file platform="android" parent="/manifest/application" mode="add" >
+      <activity android:name="todoc" android:label="@string/app_name">
+        <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.EDIT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="file" android:mimeType="*/*"/>
+                <data android:scheme="http" android:mimeType="*/*"/>
+                <data android:scheme="content" android:mimeType="*/*"/>
+        </intent-filter>
+      </activity>
+    </gap:config-file>
+    <gap:config-file platform="ios" parent="CFBundleDocumentTypes" overwrite="true">
+        <array>
+            <dict>
+                <key>CFBundleTypeIconFiles</key>
+                <array>
+                    <string>icon.png</string>
+                    <string>icon@2x.png</string>
+                    <string>icon-72.png</string>
+                    <string>icon-72@2x.png</string>
+                </array>
+                <key>CFBundleTypeName</key>
+                <string>MyAppName File</string>
+                <key>CFBundleTypeRole</key>
+                <string>Viewer</string>
+                <key>LSHandlerRank</key>
+                <string>Owner</string>
+                <key>LSItemContentTypes</key>
+                <array>
+                    <string>com.apps4pro.betatodoc</string>
+                    <string>public.comma-separated-values-text</string>
+                    <string>public.item</string>
+                    <string>public.content</string>
+                </array>
+            </dict>
+        </array>
+    </gap:config-file>
+    <gap:config-file platform="ios" parent="UTExportedTypeDeclarations" overwrite="true">
+        <array>
+            <dict>
+                <key>UTTypeConformsTo</key>
+                <array>
+                    <string>public.data</string>
+                </array>
+                <key>UTTypeDescription</key>
+                <string>MyAppName File</string>
+                <key>UTTypeIdentifier</key>
+                <string>com.apps4pro.betatodoc</string>
+                <key>UTTypeTagSpecification</key>
+                <dict>
+                    <key>public.filename-extension</key>
+                    <string>mye</string>
+                    <key>public.mime-type</key>
+                    <string>application/octet-stream</string>
+                </dict>
+            </dict>
+        </array>
+    </gap:config-file>
+    -->
+
+    <!--
+
+            <intent-filter>
+                    <action android:name="android.intent.action.VIEW"/>
+                    <action android:name="android.intent.action.EDIT"/>
+                    <category android:name="android.intent.category.DEFAULT"/>
+                    <data android:scheme="file" android:mimeType="*/*"/>
+                    <data android:scheme="http" android:mimeType="*/*"/>
+                    <data android:scheme="content" android:mimeType="*/*"/>
+            </intent-filter>
+
+
+              <intent-filter>
+              <action android:name="android.intent.action.SEND" />
+              <category android:name="android.intent.category.DEFAULT" />
+              <data android:mimeType="text/*" />
+              </intent-filter>
+            <intent-filter>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="geo"/>
+            </intent-filter>
+          -->
+
+
+  <!-- Icons & Splash -->
+
+    <icon src="resources/icons/favicon.png" />
+
+    <!-- android icons
+    <platform name="android">
+        <icon src="resources/icons/firefox-icon-32x32.png" density="ldpi" />
+        <icon src="resources/icons/firefox-icon-64x64.png" density="mdpi" />
+        <icon src="resources/icons/firefox-icon-128x128.png" density="hdpi" />
+        <icon src="resources/icons/firefox-icon-256x256.png" density="xhdpi" />
+
+        <splash src="resources/splashs/platforms/android/res/drawable-land-hdpi/screen.png" density="land-hdpi"/>
+        <splash src="resources/splashs/platforms/android/res/drawable-land-ldpi/screen.png" density="land-ldpi"/>
+        <splash src="resources/splashs/platforms/android/res/drawable-land-mdpi/screen.png" density="land-mdpi"/>
+        <splash src="resources/splashs/platforms/android/res/drawable-land-xhdpi/screen.png" density="land-xhdpi"/>
+
+        <splash src="resources/splashs/platforms/android/res/drawable-port-hdpi/screen.png" density="port-hdpi"/>
+        <splash src="resources/splashs/platforms/android/res/drawable-port-ldpi/screen.png" density="port-ldpi"/>
+        <splash src="resources/splashs/platforms/android/res/drawable-port-mdpi/screen.png" density="port-mdpi"/>
+        <splash src="resources/splashs/platforms/android/res/drawable-port-xhdpi/screen.png" density="port-xhdpi"/>
+    </platform>
+  -->
+
+    <platform name="ios">
+      <!-- iPhone / iPod Touch  -->
+      <icon src="resources/icons/apple-touch-icon-precomposed.png" width="57" height="57" />
+      <icon src="resources/icons/apple-touch-icon-114x114-precomposed.png" width="114" height="114" />
+
+      <icon src="resources/icons/apple-touch-icon-72x72-precomposed.png" width="72" height="72" />
+      <icon src="resources/icons/apple-touch-icon-144x144-precomposed.png" width="144" height="144" />
+
+      <icon src="resources/icons/apple-touch-icon-60x60-precomposed.png" width="60" height="60" />
+      <icon src="resources/icons/apple-touch-icon-120x120-precomposed.png" width="120" height="120" />
+      <!-- iPad -->
+      <icon src="resources/icons/apple-touch-icon-76x76-precomposed.png" width="76" height="76" />
+      <icon src="resources/icons/apple-touch-icon-152x152-precomposed.png" width="152" height="152" />
+
+
+      <!-- Splash ios -->
+      <!-- iPhone and iPod touch -->
+      <gap:splash src="resources/splashs/ios/Test/resources/splash/Default~iphone.png" width="320" height="480" />
+      <gap:splash src="resources/splashs/ios/Test/resources/splash/Default@2x~iphone.png" width="640" height="960" />
+
+      <!-- iPhone 5 / iPod Touch (5th Generation) -->
+      <gap:splash src="resources/splashs/ios/Test/resources/splash/Default-568h@2x~iphone.png" width="640" height="1136" />
+
+      <!-- iPad -->
+      <gap:splash src="resources/splashs/ios/Test/resources/splash/Default-Portrait~ipad.png" width="768" height="1004" />
+      <gap:splash src="resources/splashs/ios/Test/resources/splash/Default-Landscape~ipad.png" width="1024" height="768" />
+
+      <!-- Retina iPad -->
+      <gap:splash src="resources/splashs/ios/Test/resources/splash/Default-Portrait@2x~ipad.png" width="1536" height="2008" />
+      <gap:splash src="resources/splashs/ios/Test/resources/splash/Default-Landscape@2x~ipad.png" width="2048" height="1536" />
+    </platform>
+
+</widget>
