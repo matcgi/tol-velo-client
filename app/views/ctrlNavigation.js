@@ -76,7 +76,10 @@ function ctrlNavigation($scope,$log,$route,$routeParams,$location,$anchorScroll,
   };
 
   $scope.navBack = function(){
+    /* jshint -W117 */
+    //alert("remove jshint...");
     if (history) history.back();
+    /* jshint +W117 */
   };
 
   $scope.navTraceClick = function(event) {

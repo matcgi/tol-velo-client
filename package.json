@@ -1,7 +1,7 @@
 {
   "name": "tol-velo-client",
   "description": "",
-  "version": "15.6.38",
+  "version": "15.6.39",
   "homepage": "http://localhost:8765/app",
   "repository": "http://localhost:9000/todoc",
   "appServerUrlLocal": "http://localhost:9000/todoc",
