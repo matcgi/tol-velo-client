@@ -284,7 +284,7 @@ function padInteger(num, size) {
 
 	//------------------
 	// Initialization
-	if ($scope.redirect) $scope.redirect();
+	if ($scope.redirect) $scope.navRedirect();
 
 
 });

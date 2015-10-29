@@ -33,7 +33,7 @@ angular.module('myAngularApp.views.user', []).config(function($routeProvider) {
     srvData.setUserLoggedIn(null);
     srvData.becarefulClean();
     srvConfig.setConfigAppFirstInitDone(false);
-    $scope.setAppLogin(false);
+    $scope.navSetLogin(false);
 
   };
 

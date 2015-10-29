@@ -4,10 +4,10 @@
 angular.module('myAngularApp.config', [])
 
 // from package.json
-.constant("appName","tdc")
+.constant("appName","tolvelo")
 .constant("appVersion","15.6.39")
-.constant("appServerUrlLocal","http://localhost:9000/todoc")
-.constant("appServerUrlRemote", "https://xxxx.com/todoc")
+.constant("appServerUrlLocal","http://localhost:9000/tol-velo")
+.constant("appServerUrlRemote", "http://matcgi.koding.io:5984/tol-velo")
 
 
 .constant("appGAID","UA-63329886-4")

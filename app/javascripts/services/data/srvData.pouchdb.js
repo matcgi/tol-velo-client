@@ -1148,7 +1148,7 @@ var SrvDataPouchDB = (function() {
     // retrieve chore and set lastTimeDone
     var historicChoreId = historic[self.historicColumns.choreId];
     var choreDone = null;
-    for (var i = 0; (i <  chores.length) && !choreDone; i++){
+    for (i = 0; (i <  chores.length) && !choreDone; i++){
       var chore = chores[i];
       var choreId = chore._id;
       if (choreId === historicChoreId) {

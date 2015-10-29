@@ -126,7 +126,7 @@
                 <string>Owner</string>
                 <key>LSItemContentTypes</key>
                 <array>
-                    <string>com.apps4pro.betatodoc</string>
+                    <string>com.assurlab.tolvelo</string>
                     <string>public.comma-separated-values-text</string>
                     <string>public.item</string>
                     <string>public.content</string>
@@ -144,7 +144,7 @@
                 <key>UTTypeDescription</key>
                 <string>MyAppName File</string>
                 <key>UTTypeIdentifier</key>
-                <string>com.apps4pro.betatodoc</string>
+                <string>com.assurlab.tolvelo</string>
                 <key>UTTypeTagSpecification</key>
                 <dict>
                     <key>public.filename-extension</key>

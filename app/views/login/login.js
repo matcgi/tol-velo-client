@@ -18,9 +18,9 @@ angular.module('myAngularApp.views.login', ['ngRoute'])
 	$scope.loginSetLogin = function(user) {
 
 		srvData.setUserLoggedIn(user);
-		$scope.setAppLogin(true);
+		$scope.navSetLogin(true);
 		$scope.navJustLogin();
-		$scope.redirect('/');
+		$scope.navRedirect('/');
 	};
 
 	$scope.loginSubmit = function (email, validForm) {
