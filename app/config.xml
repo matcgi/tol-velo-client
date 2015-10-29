@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0"
     xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android"
-    id = 'com.apps4pro.betatodoc'
+    id = 'com.assurlab.tolvelo'
     version = '15.6.39'>
 
-    <name>todoc</name>
+    <name>tolvelo</name>
     <description>todoc latest</description>
 
-    <author email="contact@apps4pro.com" href="https://apps4pro.com">Apps4pro Team</author>
+    <author email="contact@assurlab.com" href="https://assurlab.com">AssurLab Team</author>
 
     <preference name='phonegap-version' value='cli-5.1.1' />
     <preference name="loglevel" value="VERBOSE" />
